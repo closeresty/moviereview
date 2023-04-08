@@ -1,0 +1,142 @@
+body.light-theme {
+	background-color: $light-theme-color !important;
+	color: $black;
+
+	.title {
+		color: $black;
+	}
+
+	p {
+		color: $black;
+	}
+
+	nav.page-navbar {
+		
+		.nav-link {
+			color: $black;
+		}
+
+		&.affix {
+			background: $light-theme-color;
+			border-bottom: 1px solid rgba($gray-700, .2);
+
+			.nav-link {
+				color: $gray-800;
+			}
+		}
+
+		.nav-navbar {
+			.search {
+
+				.search-wrapper {
+					background: $light-theme-color;
+					border-color: rgba($gray-500,.5);
+
+					&:after {
+						border-color: inherit;
+					}
+				}
+			}
+		}
+			
+	}
+
+	.theme-selector {
+		background: $light-theme-color;
+
+		.spinner i {
+			color: $gray-800;
+		}
+	}
+
+	.header {
+	    background-image: url(../imgs/header-light.jpg);
+
+		.overlay {
+			background-image: radial-gradient(140% 110% at 48% 42%,rgba($light-theme-color, .40),rgba($light-theme-color, .50),rgba($light-theme-color, .65),rgba($light-theme-color, .75),rgba($light-theme-color, .93),$light-theme-color 55%,$light-theme-color 200%,);
+
+		}
+
+		p,
+		.title,
+		.header-title {
+			color: $dark-theme-color;
+		}
+
+		.btn-theme-color {
+			border-color: $dark-theme-color;
+			color: $dark-theme-color;
+
+			&:hover {
+				background: rgba($dark-theme-color, .5);
+				border-color: rgba($dark-theme-color, .1);
+				color: $white;
+			}
+
+			&:active {
+				background: rgba($dark-theme-color, 9)
+			}
+		}
+	}
+
+	.overlay-img {
+
+		p,
+		.title,
+		.subtitle {
+			color: $light-theme-color;
+		}
+	}
+
+	.card {
+		.card-title,
+		.card-subtitle {
+			color: $dark-theme-color;
+		}
+	}
+
+	.form-control {
+		border-color: $gray-500;
+		background: rgba($gray-400, .6);
+		color: $gray-800;
+
+		&::placeholder {
+			color: $gray-700;
+		}
+
+		&:focus {
+			border-color: rgba($gray-900,.6);
+
+		}
+
+	}
+
+	.form-control[type="submit"] {
+
+	&:focus,
+	&:hover{	
+			background-color: rgba($gray-800,.6);
+			border-color: rgba($gray-800,.6);
+			color: $white;
+
+		}
+	}
+
+	.contact-section {
+
+		.overlay {
+			background-image: radial-gradient(200% 130% at 48% 65%,rgba($light-theme-color, .50),rgba($light-theme-color, .60),rgba($light-theme-color, .70),rgba($light-theme-color, .87),rgba($light-theme-color, .99),$light-theme-color 55%,$light-theme-color 200%,);
+
+		}
+
+		.footer {
+
+			.infos,
+			span,
+			.links a {
+				color: $dark-theme-color;
+			}
+		}
+	}
+
+}

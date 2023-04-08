@@ -1,0 +1,32 @@
+.form-control {
+	border: 2px solid $gray-600;
+	background: rgba($dark-theme-color, .2);		
+	margin-bottom: 10px;
+	color: $white;
+
+	&::placeholder {
+		color: white;
+	}
+
+	&:focus {
+		background: rgba($dark-theme-color, .2);		
+		border-color: rgba(lighten($primary, 20%), .8);
+		box-shadow: 0 0 5px rgba(lighten($primary, 20%), .2);
+		color: $white;
+	}
+}
+.form-control[type="submit"] {
+	padding-bottom: 27px;
+	line-height: 20px;
+	&:focus,
+	&:hover{	
+		background-color: rgba(lighten($primary, 20%), .5);
+		border-color: rgba(lighten($primary, 20%), .8);		
+		color: $white;
+
+	}
+
+	&:active {
+		background-color: rgba(lighten($primary, 20%), .7);
+	}
+}

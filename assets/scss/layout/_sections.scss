@@ -1,0 +1,37 @@
+html,
+body {
+    height: 100%;
+}
+
+/* page container and row */
+.page-container {
+    text-align: center;
+    padding: 50px 0;
+}
+@include media-breakpoint-down(sm){
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+/* Conatct section */
+.contact-section {
+    padding-top: 120px;
+    z-index: 990;
+    position: relative;
+    text-align: center;
+    color: $white;
+    background-image: url(../imgs/footer.jpg);
+    background-size: cover;
+    background-position: bottom;
+
+    .overlay {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-image: radial-gradient(200% 130% at 48% 65%,rgba($dark-theme-color, .50),rgba($dark-theme-color, .60),rgba($dark-theme-color, .70),rgba($dark-theme-color, .87),rgba($dark-theme-color, .99),$dark-theme-color 55%,$dark-theme-color 200%,);
+    }
+}

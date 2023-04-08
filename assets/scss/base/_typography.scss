@@ -1,0 +1,41 @@
+
+/* typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: bold;
+	color: $white;
+}
+.title {
+	font-size: calc(20px + (30 - 20) * ((100vw - 300px) / (1300 - 300)));		
+}
+p {
+	font-size: calc(13px + (15 - 13) * ((100vw - 300px) / (1300 - 300)));
+	opacity: .9; 
+	font-weight: 400;
+	letter-spacing: .6px;
+	color: $white;
+} 
+a {
+	color: $gray-600;
+	text-decoration: none;
+
+	.angle {
+		font-size: 13px;
+		position: relative;
+
+	}
+
+	&:hover {
+		color: $gray-500;
+	}
+}
+
+
+.xs-font {
+	font-size: 13px;
+	opacity: .5;
+}
